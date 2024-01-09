@@ -16,6 +16,7 @@
 		DD9E01DC28FDAB1000E4A9D3 /* SocketAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E01DB28FDAB1000E4A9D3 /* SocketAppUITests.swift */; };
 		DD9E01DE28FDAB1000E4A9D3 /* SocketAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E01DD28FDAB1000E4A9D3 /* SocketAppUITestsLaunchTests.swift */; };
 		DD9E01EC28FDAB3F00E4A9D3 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = DD9E01EB28FDAB3F00E4A9D3 /* SocketIO */; };
+		DDC536052B4DBF6500BC3FB4 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = DDC536042B4DBF6500BC3FB4 /* SocketIO */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 			files = (
 				DD9E01EC28FDAB3F00E4A9D3 /* SocketIO in Frameworks */,
 				DD78994F293A47B300536253 /* SocketIO in Frameworks */,
+				DDC536052B4DBF6500BC3FB4 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +152,7 @@
 			packageProductDependencies = (
 				DD9E01EB28FDAB3F00E4A9D3 /* SocketIO */,
 				DD78994E293A47B300536253 /* SocketIO */,
+				DDC536042B4DBF6500BC3FB4 /* SocketIO */,
 			);
 			productName = SocketApp;
 			productReference = DD9E01BD28FDAB0E00E4A9D3 /* SocketApp.app */;
@@ -226,6 +229,7 @@
 			packageReferences = (
 				DD9E01EA28FDAB3E00E4A9D3 /* XCRemoteSwiftPackageReference "socket" */,
 				DD78994D293A47B300536253 /* XCRemoteSwiftPackageReference "socket" */,
+				DDC536032B4DBF6500BC3FB4 /* XCRemoteSwiftPackageReference "socket" */,
 			);
 			productRefGroup = DD9E01BE28FDAB0E00E4A9D3 /* Products */;
 			projectDirPath = "";
@@ -607,6 +611,14 @@
 				kind = branch;
 			};
 		};
+		DDC536032B4DBF6500BC3FB4 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -616,6 +628,11 @@
 			productName = SocketIO;
 		};
 		DD9E01EB28FDAB3F00E4A9D3 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD9E01EA28FDAB3E00E4A9D3 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+		DDC536042B4DBF6500BC3FB4 /* SocketIO */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DD9E01EA28FDAB3E00E4A9D3 /* XCRemoteSwiftPackageReference "socket" */;
 			productName = SocketIO;
